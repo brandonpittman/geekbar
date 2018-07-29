@@ -1,6 +1,7 @@
 <template>
   <Slide>
-    The End
+    <h1 slot="title">ありがとうございました。</h1>
+    <aside>@brandonpittman</aside>
   </Slide>
 </template>
 

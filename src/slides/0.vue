@@ -1,6 +1,8 @@
 <template>
   <Slide>
-    Something interesting
+    <h1 slot="title">非同期コンポーネントとVue.js</h1>
+    <aside>ピットマン・ブランドン</aside>
+    <aside>@brandonpittman</aside>
   </Slide>
 </template>
 
@@ -13,3 +15,6 @@ export default {
   }
 }
 </script>
+
+<style>
+</style>

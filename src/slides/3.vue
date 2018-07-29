@@ -1,12 +1,10 @@
 <template>
   <Slide>
-    <h1 slot="title">普通のインポート</h1>
+    <h1 slot="title">オブジェクトの中でインポート</h1>
     <Code>
-      import Something from '@/components/SomeFile'
-
       export default {
         components: {
-          Something
+          Something: () => import('@/components/SomeFile')
         }
       }
     </Code>
