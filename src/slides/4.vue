@@ -1,11 +1,11 @@
 <template>
   <Slide>
-      <h1 slot="title">コード分割</h1>
-      <div class="images">
-        <img src="/import1.png" alt="">
-        <img src="/import2.png" alt="">
-        <img src="/import3.png" alt="">
-      </div>
+    <template slot="title">コード分割</template>
+    <div class="flex justify-between items-center">
+      <img class="mx-8" src="/import1.png" alt="">
+      <img class="mx-8" src="/import2.png" alt="">
+      <img class="mx-8" src="/import3.png" alt="">
+    </div>
   </Slide>
 </template>
 
@@ -22,15 +22,7 @@ export default {
 </script>
 
 <style scoped>
-.images {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 img {
-  display: block;
-  padding: 2rem;
   max-height: 60vh;
 }
 </style>

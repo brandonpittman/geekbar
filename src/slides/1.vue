@@ -1,14 +1,14 @@
 <template>
   <Slide>
-    <h1 slot="title">普通のインポート</h1>
+    <template slot="title">普通のインポート</template>
     <Code>
-      import Something from '@/components/SomeFile'
+    import Something from '@/components/SomeFile'
 
-      export default {
-        components: {
-          Something
-        }
+    export default {
+      components: {
+        Something
       }
+    }
     </Code>
   </Slide>
 </template>

@@ -1,18 +1,8 @@
 <template>
-  <div class="wrapper">
-    <h1>
+  <div >
+    <h1 class="text-5xl mb-4">
       <slot name="title"></slot>
     </h1>
     <slot></slot>
   </div>
 </template>
-
-<style scoped>
-h1 {
-  font-size: 6vw;
-}
-
-aside {
-  font-size: 3rem;
-}
-</style>

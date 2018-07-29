@@ -1,7 +1,11 @@
 <template>
-  <div id="app">
+  <div
+    class="flex justify-center items-center text-purple-darker h-screen"
+    id="app">
     <component :is="currentComponent"></component>
-    <div id="slide-counter">{{ currentSlide }}/{{ totalSlides }}</div>
+    <div
+      class="absolute pin-r pin-b"
+      id="slide-counter">{{ currentSlide }}/{{ totalSlides }}</div>
   </div>
 </template>
 
@@ -58,41 +62,9 @@ export default {
 </script>
 
 <style>
-body {
-  margin: 0;
-}
-
 #app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 5px);
-  width: 100vw;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  position: relative;
-  border-top: 5px solid rebeccapurple;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-#slide-counter {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 1rem;
 }
 </style>

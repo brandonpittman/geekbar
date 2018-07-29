@@ -1,14 +1,14 @@
 <template>
   <Slide>
-    <h1 slot="title">変数としてインポート</h1>
+    <template slot="title">変数としてインポート</template>
     <Code>
-      const Something = () => import('@/components/SomeFile')
+    const Something = () => import('@/components/SomeFile')
 
-      export default {
-        components: {
-          Something
-        }
+    export default {
+      components: {
+        Something
       }
+    }
     </Code>
   </Slide>
 </template>

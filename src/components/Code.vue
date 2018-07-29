@@ -1,17 +1,3 @@
 <template>
-  <pre>
-  <code>
-    <slot></slot>
-  </code>
-  </pre>
+  <pre class="text-2xl text-white p-6 bg-grey-darkest mb-6 shadow-lg rounded"><code><slot></slot></code></pre>
 </template>
-
-<style>
-pre {
-  font-size: 2rem;
-  background-color: #333;
-  color: #eee;
-  padding: 1rem;
-  text-indent: none;
-}
-</style>

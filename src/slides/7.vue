@@ -1,6 +1,6 @@
 <template>
   <Slide>
-    <h1 slot="title">ロード状態の例</h1>
+    <template slot="title">ロード状態の例</template>
     <AsyncComponent/>
   </Slide>
 </template>

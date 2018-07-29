@@ -1,12 +1,12 @@
 <template>
   <Slide>
-    <h1 slot="title">ご注意</h1>
+    <template slot="title">ご注意</template>
     <Code>
     @babel/plugin-syntax-dynamic-import
 
     npm install --save-dev @babel/plugin-syntax-dynamic-import
     </Code>
-    <aside>Hello Worldのプロジェクトでも１６％早くなりそうです。</aside>
+    <aside class="text-2xl text-blue-dark">Hello Worldのプロジェクトでも１６％早くなりそうです。</aside>
   </Slide>
 </template>
 

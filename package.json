@@ -17,6 +17,7 @@
     "@vue/cli-plugin-eslint": "^3.0.0-rc.5",
     "@vue/cli-service": "^3.0.0-rc.5",
     "@vue/eslint-config-standard": "^3.0.0-rc.5",
+    "tailwindcss": "^0.6.4",
     "vue-template-compiler": "^2.5.16"
   }
 }
