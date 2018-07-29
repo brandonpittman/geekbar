@@ -66,13 +66,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 5px);
   width: 100vw;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   position: relative;
+  border-top: 5px solid rebeccapurple;
 }
 
 #nav {
