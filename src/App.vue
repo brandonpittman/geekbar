@@ -1,8 +1,13 @@
 <template>
   <div
-    class="flex justify-center items-center text-purple-darker h-screen"
+    class="
+    flex
+    justify-center
+    items-center
+    text-purple-darker
+    h-screen"
     id="app">
-    <component :is="currentComponent"></component>
+    <component :is="currentComponent"/>
     <div
       class="absolute pin-r pin-b"
       id="slide-counter">{{ currentSlide }}/{{ totalSlides }}</div>
@@ -29,17 +34,17 @@ export default {
   computed: {
     currentComponent () {
       if (this.currentSlide < this.totalSlides) {
-        return this.slides[this.currentSlide]
+        return this.componentConstructor
       } else {
         return () => import('@/slides/TheEnd')
       }
+    },
+    componentConstructor () {
+      const path = `./slides/${this.currentSlide}`
+      return () => import(`${path}`)
     }
   },
   mounted () {
-    for (let slide = 0; slide < this.totalSlides; slide++) {
-      this.slides = [...this.slides, () => import(`@/slides/${slide}`)]
-    }
-
     window.addEventListener('keyup', (e) => {
       if (e.key === 'ArrowLeft') {
         this.previousSlide()
