@@ -1,6 +1,7 @@
 <template>
   <Slide>
   <h1 slot="title">Thank you.</h1>
+  <p class="text-lg text-green font-light my-2">Built with Tailwind.</p>
   <div class="flex text-3xl">
     <aside class="mr-4">@brandonpittman</aside>
     <div class="svgs">
