@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 const App = () => import('@/App')
-const About = () => import('./views/About.vue')
+const About = () => import('@/views/About.vue')
 
 Vue.use(Router)
 
